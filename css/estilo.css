@@ -11,22 +11,44 @@ nav label {
     line-height: 80px;
     font-size: 40px;
     margin-left: 5px;
-    font-family: sans-serif;
     font-weight: bold;
     padding: 0 20px;
 }
 nav ul {
     line-height: 80px;
-    color: white;
     float: right;
     margin-right: 15px;
 }
 nav ul li {
     text-decoration: none;
     display: inline-block;
-    padding: 0 15px;
-    font-size: 20px;
+    
 }
-nav ul li:hover {
+nav ul li a:hover {
     background-color: rgb(40, 40, 40);
+    color: white;
+    transition: .25s;
+}
+nav ul li a {
+    text-decoration: none;
+    padding: 29px 15px;
+    font-size: 20px;
+    color: rgb(173, 173, 173);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.select{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 5px;
+    color: black;
+    background-color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 8px;
+}
+.select:hover{
+    color: black;
+    background-color: white;
 }
