@@ -22,7 +22,6 @@ nav ul {
 nav ul li {
     text-decoration: none;
     display: inline-block;
-    
 }
 nav ul li a:hover {
     background-color: rgb(40, 40, 40);
@@ -37,7 +36,7 @@ nav ul li a {
     font-family: sans-serif;
     font-weight: bold;
 }
-.select{
+.selected{
     text-decoration: none;
     font-size: 20px;
     padding: 5px 5px;
@@ -48,7 +47,43 @@ nav ul li a {
     border-radius: 5px;
     margin: 0 8px;
 }
-.select:hover{
+.selected:hover{
     color: black;
     background-color: white;
+}
+#check{
+    display: none;
+}
+
+@media only screen and (max-width: 732px) {
+    nav ul {
+        margin-right: 0;
+        width: 1px;
+    }
+    nav ul li{
+        display: none;
+    }
+    #check{
+        display: block;
+        float: right;
+        height: 80px;
+        width: 80px;
+        background: none;
+        text-decoration: none;
+        border: none;
+        outline: none;
+    }
+    #check:checked ~ ul{
+        width: 100%;
+        background-color: rgb(36, 36, 36);
+        text-align: center;
+        transition: .5s;
+    }
+    #check:checked ~ ul li{
+        display: block;
+        transition: 1s;
+    }
+    #check:checked ~ ul li a{
+        font-size: 20px;
+    }
 }
