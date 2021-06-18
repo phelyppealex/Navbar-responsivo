@@ -54,24 +54,38 @@ nav ul li a {
 #check{
     display: none;
 }
+.btn{
+    display: none;
+}
 
-@media only screen and (max-width: 732px) {
+@media only screen and (max-width: 774px) {
+    nav{
+        height: 65px;
+    }
+    nav label{
+        line-height: 65px;
+        font-size: 30px;
+    }
     nav ul {
         margin-right: 0;
         width: 1px;
+        float: left;
     }
     nav ul li{
         display: none;
     }
-    #check{
+    nav ul li a{
+        font-size: 10px;
+    }
+    .btn{
         display: block;
         float: right;
-        height: 80px;
-        width: 80px;
-        background: none;
-        text-decoration: none;
-        border: none;
-        outline: none;
+    }
+    .btn:hover{
+        background-color: rgb(36, 36, 36);
+    }
+    #check{
+        float: right;
     }
     #check:checked ~ ul{
         width: 100%;
