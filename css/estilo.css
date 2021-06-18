@@ -56,7 +56,6 @@ nav ul li a {
 }
 .btn{
     display: none;
-    color: white;
 }
 
 @media only screen and (max-width: 774px) {
@@ -81,6 +80,7 @@ nav ul li a {
     .btn{
         display: block;
         float: right;
+        color: white;
     }
     .btn:hover{
         background-color: rgb(36, 36, 36);

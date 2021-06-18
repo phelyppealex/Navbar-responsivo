@@ -1,1 +1,1 @@
-Modelo de navbar responsivo (in build) 👨🏽‍💻
+Modelo de navbar responsivo 👨🏽‍💻
