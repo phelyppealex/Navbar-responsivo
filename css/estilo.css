@@ -5,6 +5,7 @@
 nav {
     height: 80px;
     background-color: black;
+    transition: .25s;
 }
 nav label {
     color: white;
@@ -13,6 +14,7 @@ nav label {
     margin-left: 5px;
     font-weight: bold;
     padding: 0 20px;
+    transition: .25s;
 }
 nav ul {
     line-height: 80px;
@@ -23,11 +25,6 @@ nav ul li {
     text-decoration: none;
     display: inline-block;
 }
-nav ul li a:hover {
-    background-color: rgb(40, 40, 40);
-    color: white;
-    transition: .25s;
-}
 nav ul li a {
     text-decoration: none;
     padding: 29px 15px;
@@ -35,6 +32,11 @@ nav ul li a {
     color: rgb(173, 173, 173);
     font-family: sans-serif;
     font-weight: bold;
+}
+nav ul li a:hover {
+    background-color: rgb(40, 40, 40);
+    color: white;
+    transition: .25s;
 }
 .selected{
     text-decoration: none;
@@ -68,14 +70,18 @@ nav ul li a {
     }
     nav ul {
         margin-right: 0;
-        width: 1px;
-        float: left;
+        width: 65px;
+        float: right;
     }
     nav ul li{
         display: none;
     }
     nav ul li a{
-        font-size: 10px;
+        font-size: 1px;
+    }
+    nav ul li a:hover {
+        background-color: rgb(58, 58, 58);
+        border-radius: 5px;
     }
     .btn{
         display: block;
@@ -96,9 +102,9 @@ nav ul li a {
     }
     #check:checked ~ ul li{
         display: block;
-        transition: 1s;
     }
     #check:checked ~ ul li a{
         font-size: 20px;
+        transition: .5s;
     }
 }
