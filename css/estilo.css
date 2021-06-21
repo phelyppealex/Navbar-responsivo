@@ -13,7 +13,7 @@ nav label {
     font-size: 40px;
     margin-left: 5px;
     font-weight: bold;
-    padding: 0 20px;
+    padding: 0 17px;
     transition: .25s;
 }
 nav ul {
@@ -57,6 +57,7 @@ nav ul li a:hover {
     display: none;
 }
 .btn{
+    font-size: 55px;
     display: none;
 }
 
@@ -67,6 +68,7 @@ nav ul li a:hover {
     nav label{
         line-height: 65px;
         font-size: 30px;
+        margin-left: 0;
     }
     nav ul {
         width: 65px;
@@ -76,11 +78,7 @@ nav ul li a:hover {
         display: none;
     }
     nav ul li a{
-        font-size: 1px;
-    }
-    nav ul li a:hover {
-        background-color: rgb(36, 35, 35);
-        border-radius: 5px;
+        margin: 0 0;
     }
     .btn{
         display: block;
@@ -88,11 +86,15 @@ nav ul li a:hover {
         float: right;
         color: white;
     }
+    #check{
+        float: right;
+    }
     .btn:hover{
         background-color: rgb(36, 36, 36);
     }
-    #check{
-        float: right;
+    nav ul li a:hover {
+        background-color: rgb(36, 35, 35);
+        border-radius: 5px;
     }
     #check:checked ~ ul{
         width: 100%;
@@ -103,6 +105,7 @@ nav ul li a:hover {
     }
     #check:checked ~ ul li{
         display: block;
+        width: 100%;
     }
     #check:checked ~ ul li a{
         font-size: 20px;
