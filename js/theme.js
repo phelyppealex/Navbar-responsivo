@@ -11,6 +11,7 @@ function mudarTema(event){
     else {
         document.getElementById('navbar').style.backgroundColor = 'white';
         document.getElementById('lbl').style.backgroundColor = 'black';
+        alert('pq saporra n tá indo?');
     }
 }
 
