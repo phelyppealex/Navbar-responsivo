@@ -1,14 +1,16 @@
 const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
+prefersColorScheme.addEventListener(mudarTema);
+mudarTema(prefersColorScheme);
+
 function mudarTema(event){
-    alert(event.matches);
     if (event.matches) {
-        document.getElementById('navbar').style.backgroundColor = 'rgb(0,0,0)';
+        document.getElementById('navbar').style.backgroundColor = 'black';
+        document.getElementById('lbl').style.backgroundColor = 'white';
     }
     else {
-        document.getElementById('navbar').style.backgroundColor = 'rgb(80,80,80)';
+        document.getElementById('navbar').style.backgroundColor = 'white';
+        document.getElementById('lbl').style.backgroundColor = 'black';
     }
 }
 
-prefersColorScheme.addEventListener(mudarTema(prefersColorScheme));
-mudarTema(prefersColorScheme);
