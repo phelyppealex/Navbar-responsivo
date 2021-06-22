@@ -13,5 +13,5 @@ function mudarTema(event){
     }
 }
 
-prefersColorScheme.addEventListener(mudarTema);
+prefersColorScheme.addEventListener(mudarTema(prefersColorScheme));
 mudarTema(prefersColorScheme);
