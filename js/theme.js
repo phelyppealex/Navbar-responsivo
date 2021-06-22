@@ -1,6 +1,6 @@
 const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
-setInterval(mudarTema(prefersColorScheme), 1000)
+var qualquer = setInterval(mudarTema(prefersColorScheme), 1000);
 
 function mudarTema(event){
     if (event.matches) {
