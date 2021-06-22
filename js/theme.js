@@ -1,5 +1,7 @@
 const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
+setInterval(mudarTema(prefersColorScheme), 1000)
+
 function mudarTema(event){
     if (event.matches) {
         alert('dark');
@@ -12,6 +14,3 @@ function mudarTema(event){
         document.getElementById('lbl').style.color = 'rgb(0,0,0)';
     }
 }
-
-prefersColorScheme.addEventListener(mudarTema(prefersColorScheme));
-mudarTema(prefersColorScheme);
