@@ -27,7 +27,7 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-    padding: 29px 15px;
+    padding: 28px 15px;
     font-size: 20px;
     color: rgb(173, 173, 173);
     font-family: sans-serif;
@@ -55,6 +55,7 @@ nav ul li a:hover {
 }
 #check{
     display: none;
+    color: blue;
 }
 .btn{
     font-size: 55px;

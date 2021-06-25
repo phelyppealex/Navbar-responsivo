@@ -1,14 +1,18 @@
-const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
+var dark = true;
 
-var qualquer = setInterval(mudarTema(prefersColorScheme), 1000);
-
-function mudarTema(event){
-    if (event.matches) {
-        document.getElementById('navbar').style.backgroundColor = 'rgb(0,0,0)';
-        document.getElementById('lbl').style.color = '#FFFFFF';
-    }
-    else {
-        document.getElementById('navbar').style.backgroundColor = '#FFFFFF';
-        document.getElementById('lbl').style.color = 'rgb(0,0,0)';
+function mudarTema(){
+    var preto = 'rgb(0,0,0)';
+    var branco = 'rgb(216, 216, 216)';
+    
+    if (dark) {
+        dark = false;
+        document.querySelector('#navbar').style.backgroundColor = branco;
+        document.querySelector('#lbl').style.color = preto;
+        document.querySelector('.btn').style.color = preto;
+    }else{
+        dark = true;
+        document.querySelector('#navbar').style.backgroundColor = preto;
+        document.querySelector('#lbl').style.color = branco;
+        document.querySelector('.btn').style.color = branco;
     }
 }
