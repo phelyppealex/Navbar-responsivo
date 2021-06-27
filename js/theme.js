@@ -2,7 +2,7 @@ const preto = 'rgb(0,0,0)';
 const branco = '#FFFF';
 const cinza = 'rgb(216, 216, 216)';
 const listaDark = 'rgb(22, 22, 22)';
-const listaLight = 'gray';
+const listaLight = 'rgb(190, 190, 190);';
 
 var dark = true;
 
@@ -33,10 +33,8 @@ function resize(){
     }else{
         if (dark) {
             document.querySelector('.lista').style.backgroundColor = listaDark;
-            document.styleSheets[0].insertRule('.unselected { color: rgb(173,173,173); }', 0);
         }else{
             document.querySelector('.lista').style.backgroundColor = listaLight;
-            document.styleSheets[0].insertRule('.unselected { color: rgb(0,0,0); }', 0);
         }
     }
 }
