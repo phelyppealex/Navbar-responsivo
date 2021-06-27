@@ -13,13 +13,11 @@ function mudarTema(){
         document.querySelector('#navbar').style.backgroundColor = cinza;
         document.querySelector('#lbl').style.color = preto;
         document.querySelector('.btn').style.color = preto;
-        document.querySelector('.lista').style.backgroundColor = listaLight;
     }else{
         dark = true;
         document.querySelector('#navbar').style.backgroundColor = preto;
         document.querySelector('#lbl').style.color = branco;
         document.querySelector('.btn').style.color = branco;
-        document.querySelector('.lista').style.backgroundColor = listaDark;
     }
 
     resize();
@@ -31,11 +29,14 @@ function resize(){
     
     if(window.visualViewport.width > 820){
         document.querySelector('.lista').style.backgroundColor = 'rgb(0,0,0,0)';
+        
     }else{
         if (dark) {
             document.querySelector('.lista').style.backgroundColor = listaDark;
+            document.styleSheets[0].insertRule('.unselected { color: rgb(173,173,173); }', 0);
         }else{
             document.querySelector('.lista').style.backgroundColor = listaLight;
+            document.styleSheets[0].insertRule('.unselected { color: rgb(0,0,0); }', 0);
         }
     }
 }
