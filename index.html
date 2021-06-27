@@ -7,26 +7,26 @@
         <title>Navbar</title>
 
         <script src="js/theme.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
         <link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen">
         
     </head>
-    <body>
+    <body onresize="resize()">
         
-        <nav id="navbar">
+        <nav id="navbar" >
             <label id="lbl">PHELYPPE</label>
             <input type="checkbox" name="" id="check">
-            <label for="check" class="btn">≡</label>
+            <label for="check" class="btn"><i class="fas fa-bars"></i></label>
             
-            <ul>
+            <ul class="lista">
                 <li><a class="selected" href="index.html">INÍCIO</a></li>
                 <li><a href="#">OPÇÃO 2</a></li>
                 <li><a href="#">OPÇÃO 3</a></li>
                 <li><a href="#">OPÇÃO 4</a></li>
+                <li><a href="#" onclick="mudarTema()"><i class="fas fa-adjust"></i></a></li>
             </ul>
         </nav>
-
-        <input type="button" value="TEMA" onclick="mudarTema()">
 
     </body>
 </html>
