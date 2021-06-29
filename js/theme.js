@@ -6,7 +6,6 @@ const listaLight = 'rgb(190, 190, 190);';
 
 var dark = true;
 
-
 function mudarTema(){
     if (dark) {
         dark = false;
@@ -29,12 +28,13 @@ function resize(){
     
     if(window.visualViewport.width > 820){
         document.querySelector('.lista').style.backgroundColor = 'rgb(0,0,0,0)';
-        
     }else{
         if (dark) {
             document.querySelector('.lista').style.backgroundColor = listaDark;
+            document.querySelector('.un').style.color = branco;
         }else{
             document.querySelector('.lista').style.backgroundColor = listaLight;
+            document.querySelector('.un').style.color = preto;
         }
     }
 }
