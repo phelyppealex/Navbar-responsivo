@@ -63,7 +63,7 @@ nav ul li a:hover {
 #theme{
     display: block;
 }
-#theme:checked ~ nav{
+#theme:checked ~ #navbar{
     background-color: gray;
 }
 .mudarTema{
